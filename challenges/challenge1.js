@@ -27,7 +27,7 @@ submitButtonRef.onclick = function() {
 	}
 
 	if (correctAnswers == numberOfQuestions) {
-		resultDivRef.innerHTML = 'CORRECT! <br> The passcode for this challenge is "' + passcode + '"<br>Write this down! You will need it for TBD.<br><a href="../index.html">Click here to go back to the map</a>';
+		resultDivRef.innerHTML = 'CORRECT! <br> The passcode for this challenge is "' + passcode + '"<br>Write this down! You will need it for TBD.<br><a href="../map.html">Click here to go back to the map</a>';
 	}
 
 	else {

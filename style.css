@@ -15,10 +15,6 @@ p {
 	margin: 30px 50px;
 }
 
-#initial_hidden_div {
-	display: none;
-}
-
 #map_div {
 	text-align: center;
 }
