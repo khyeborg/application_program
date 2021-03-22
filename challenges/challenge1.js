@@ -7,9 +7,9 @@ let passcode = "GROWTH";
 
 // get references
 let userAnswerArrayRef = document.getElementsByClassName("user_answer");
-let submitButtonRef = document.getElementById("submit");
-let questionsDivRef = document.getElementById("questions_div");
-let resultDivRef = document.getElementById("result_div");
+let submitButtonRef = document.getElementsByClassName("submit")[0];
+let questionsDivRef = document.getElementsByClassName("questions_div")[0];
+let resultDivRef = document.getElementsByClassName("result_div")[0];
 
 submitButtonRef.onclick = function() {
 	correctAnswers = 0
@@ -28,6 +28,7 @@ submitButtonRef.onclick = function() {
 
 	if (correctAnswers == numberOfQuestions) {
 		resultDivRef.innerHTML = 'CORRECT! <br> The passcode for this challenge is "' + passcode + '"<br>Write this down! You will need it for TBD.<br><a href="../map.html">Click here to go back to the map</a>';
+		submitButtonRef.classList.add("hidden");
 	}
 
 	else {
